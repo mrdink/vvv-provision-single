@@ -6,7 +6,7 @@ Single site provision setup.
 
 Clone the repo as the site name into your `www` directory in vvv.
 
-`git clone git@bitbucket.org:sixteenbit/vvv-provision-single.git example.dev && rm -rf example.dev/.git`
+`git clone git@github.com:mrdink/vvv-provision-single.git example.dev && rm -rf example.dev/.git`
 
 * Update variables in `config/site-vars.sh`
 * Update `vvv-hosts` and `vvv-nginx.conf`
