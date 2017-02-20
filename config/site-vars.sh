@@ -10,7 +10,7 @@ dbuser='wp'
 dbpass='wp'
 
 # The site details for this site
-domain='example.com'
+domain='example.dev'
 admin_user='user'
 admin_pass='password'
 admin_email='admin@example.dev'
