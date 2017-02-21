@@ -34,19 +34,13 @@ PHP
     noroot wp core install --url="$domain" --quiet --title="$site_name" --admin_name="$admin_user" --admin_email="$admin_email" --admin_password="$admin_pass"
 
     # Install all plugins in the plugins file using CLI
-    if [ -f ../config/plugins ]
-
-    echo "Installing Plugins"
-
-    then
-        while IFS='' read -r line || [ -n "$line" ]
-        do
-            if [ "#" != ${line:0:1} ]
-            then
-                wp plugin install $line
-            fi
-        done < ../config/plugins
-    fi
+    noroot wp plugin install debug-bar
+    noroot wp plugin install host-analyticsjs-local
+    noroot wp plugin install jetpack
+    noroot wp plugin install regenerate-thumbnails
+    noroot wp plugin install theme-check
+    noroot wp plugin install w3-total-cache
+    noroot wp plugin install wp-force-login
 
     echo "Uninstalling Plugins..."
     noroot wp plugin uninstall hello
