@@ -13,7 +13,6 @@ $ cd example.dev
 $ git clone git@github.com:mrdink/vvv-provision-single.git . && rm -rf .git
 ```
 
-* Update `vvv-config.yml` or `vvv-custom.yml`
-* Update variables in `config/site-vars.sh`
+* Add hosts to `vvv-config.yml` or `vvv-custom.yml`
 * Update `vvv-hosts` and `vvv-nginx.conf`
 * Run `vagrant up && vagrant provision`
